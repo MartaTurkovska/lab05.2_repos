@@ -37,7 +37,7 @@ int main()
 }
 void S(const double x, const double eps, int& n, double& s)
 {
-	n = 0; 
+	n = 0;
 	double a = (x - 1) / (1. * x);
 	s = a;
 	do {
@@ -48,6 +48,6 @@ void S(const double x, const double eps, int& n, double& s)
 }
 void A(const double x, const int n, double& a)
 {
-	double R = (n * x - n) / (n * x + x); 
+	double R = (n * x - n) / (n * x + x);
 	a *= R;
 }

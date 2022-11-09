@@ -37,12 +37,12 @@ int main()
 }
 double S(const double x, const double eps, int& n, double s)
 {
-	n = 0; 
+	n = 0;
 	double a = (x - 1) / (1. * x);
 	s = a;
 	do {
 		n++;
-			a = A(x, n, a);
+		a = A(x, n, a);
 		s += a;
 	} while (abs(a) >= eps);
 	return s;
@@ -52,4 +52,4 @@ double A(const double x, const int n, double a)
 	double R = (n * x - n) / (n * x + x);
 	a *= R;
 	return a;
-}
+}
